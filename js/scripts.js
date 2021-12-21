@@ -59,22 +59,27 @@ function bindModal(triggerSelector, modalSelector, closeSelector,animationOpen, 
 
 }
 
+const rangeBlocks = document.querySelectorAll ('.range-block');
+rangeBlocks.forEach (block => {
+    const arrValue = block.querySelectorAll ('.range_value-list option');
+    const inputSelector = block.querySelector ('.range-thumb');
+    let inputValue = inputSelector.value;
+    renderRangeValue(inputSelector,inputValue, arrValue);
 
-const arrValue = document.querySelectorAll ('.range1_optionjs');
-const arrBloksRange = document.querySelectorAll ('.js_blockValue');
+    inputSelector.addEventListener('change', getRangeValue);
+
+    function getRangeValue(e) {
+        inputValue = this.value;
+        renderRangeValue(inputSelector,inputValue, arrValue);
+         }
+})
 
 
-arrBloksRange.forEach(item => {
-    item.querySelector('.range-thumb').addEventListener('change', getRangeValue);
-});
-
-
-function getRangeValue(e) {
-   const rangeValue = arrValue[this.value].value;
-   e.target.previousElementSibling.style.paddingLeft=(arrValue[this.value].offsetLeft- 10)+"px";
-   e.target.previousElementSibling.textContent=rangeValue;
+  function renderRangeValue (inputSelectot, inputValue, arrValue) {
+    const rangeValue = arrValue[inputValue].value;
+    inputSelectot.previousElementSibling.style.paddingLeft=(arrValue[inputValue].offsetLeft- 10)+"px";
+    inputSelectot.previousElementSibling.textContent=rangeValue;
   }
-
 
 bindModal(".js-contactUs", ".js-popupCall", ".js-popupCall_close", 'faded', 'fadeOut');
 bindModal(".js_price", ".js_popupPrice", ".js-pricePopup_close", 'faded', 'fadeOut');

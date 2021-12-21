@@ -110,6 +110,12 @@ body {
   max-width: 1300px;
 }
 
+.burger {
+  display: none;
+}
+.mobile-logo {
+  display: none;
+}
 .button {
   display: block;
   font-size: 24px;
@@ -1036,11 +1042,11 @@ footer {
     line-height: 38px;
     font-size: 24px;
   }
-  
+
   .promo_section {
     padding-top: 25px;
     padding-bottom: 50px;
-}
+  }
 
   .promo_btn-block {
     margin: 50px 55px 0px;
@@ -1049,18 +1055,14 @@ footer {
   .services_list {
     padding: 0px 50px;
   }
-  .services_list li {
-    line-height: 20px;
-    padding: 0px 10px 0px 55px;
-  }
-
-  .services_list li:nth-child(n+3) {
-     margin-bottom: 20px;
+ 
+  
+  .services_list li:nth-child(n + 3) {
+    margin-bottom: 20px;
   }
 
   .site_item--secondColor:nth-child(3n) {
     padding-right: 0px;
-   
   }
   .site_item--secondColor::after {
     width: 40px;
@@ -1080,7 +1082,7 @@ footer {
     flex-basis: calc(50% - 30px);
   }
 
-  .advantage_item  p {
+  .advantage_item p {
     line-height: 2;
   }
 
@@ -1110,24 +1112,26 @@ footer {
   .stages_info {
     font-size: 18px;
     line-height: 30px;
-    padding:40px 40px 40px 130px;
+    padding: 40px 40px 40px 130px;
   }
 
   .stages_info::before {
     width: 50px;
     height: 50px;
   }
-  
-  .team_title, .about-us_title {
+
+  .team_title,
+  .about-us_title {
     padding-bottom: 30px;
   }
 
-  .team_title--text, .about-us_title-text {
+  .team_title--text,
+  .about-us_title-text {
     padding-bottom: 30px;
-}
-   .team_list {
-     padding-left: 60px;
-   }
+  }
+  .team_list {
+    padding-left: 60px;
+  }
   .team_photo {
     width: 240px;
     height: 240px;
@@ -1151,15 +1155,15 @@ footer {
   .about-us_item::after {
     height: 40px;
     width: 40px;
-}
+  }
 
-.about-us_item::before {
-  left: 15px;
-  width: 10px;
-  height: 18px;
-  border-width: 0 3px 3px 0;
-}
- 
+  .about-us_item::before {
+    left: 15px;
+    width: 10px;
+    height: 18px;
+    border-width: 0 3px 3px 0;
+  }
+
   .calcPrice_info--radio {
     flex-wrap: wrap;
   }
@@ -1173,39 +1177,167 @@ footer {
 
   .checkout_col {
     padding-right: 60px;
+  }
+
+  .calcPrice_total {
+    font-size: 20px;
+  }
+
+  .calcPrice_consultation_form {
+    margin-top: 25px;
+  }
+
+  .questions_item_title {
+    font-size: 24px;
+  }
+  .questions_item_title::before {
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .contacts_block {
+    width: 925px;
+    height: 80px;
+    font-size: 18px;
+    align-items: center;
+  }
+
+  .contacts_map {
+    height: 600px;
+  }
+
+  .footer_text-info {
+    font-size: 18px;
+  }
 }
 
-.calcPrice_total {
-  font-size: 20px;
+@media (max-width: 1025px) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  .promo .container {
+    padding: 0px;
+  }
+
+  .mobile-logo {
+    display: block;
+    font-size: 24px;
+    color: var(--color-SecondDecorate);
+    font-weight: 700;
+  }
+
+  .big-logo {
+    display: none;
+  }
+
+  .header {
+   width: 100%;
+   height: 50px;
+   background-color: #fff;
+   position: fixed;
+   padding: 20px;
+   z-index: 1000;
 }
 
-.calcPrice_consultation_form {
-  margin-top: 25px;
+.section_title {
+  text-align: left;
+  font-size: 26px;
+  line-height: 36px;
+  padding: 30px 0px;
 }
 
-.questions_item_title {
-  font-size: 24px;
-}
-.questions_item_title::before {
-  line-height: 40px;
-  width: 40px;
-  height: 40px;
+.site_list {
+  padding: 0;
 }
 
-
-
-.contacts_block {
-  width: 925px;
-  height: 80px;
-  font-size: 18px;
-  align-items: center;
+.button {
+  width: 100%
 }
 
-.contacts_map {
-  height: 600px
+.site_item--firstColor, .site_item--secondColor, .about-us_item {
+  flex-basis: 100%;
+  padding: 0px 0px 0px 40px;
+  margin-bottom: 30px;
+  line-height: 26px;
 }
 
-.footer_text-info {
-  font-size: 18px;
+.site_item--firstColor::before, .site_item--secondColor::before, .about-us_item::before {
+  border-width: 0 3px 3px 0;
+  content: "";
+  width: 8px;
+  height: 16px;
+}
+
+.site_item--secondColor::after, .about-us_item::after {
+  display: none;
+}
+
+.site_item--firstColor:last-child {
+  margin-bottom: 0px;
+}
+
+
+.promo_section {
+  padding: 80px 20px 40px;
+}
+
+.promo_btn-block {
+  margin: 0px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.promo_btn-block .button:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.advantage_item {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+}
+
+.advantage_item p {
+  line-height: 1.5;
+}
+
+.consultation_form {
+  margin: 40px auto;
+}
+
+.form_back-call {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.form_back-call--input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.consultation_whatsapp p {
+  text-align: left;
+}
+
+.site_item--number  {
+  flex-basis: 100%;
+  margin-bottom: 40px;
+}
+.stages_info {
+  line-height: 24px;
+  padding: 80px 20px 20px;
+}
+.stages_info::before {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%)
 }
 }
