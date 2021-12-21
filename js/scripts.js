@@ -59,14 +59,32 @@ function bindModal(triggerSelector, modalSelector, closeSelector,animationOpen, 
 
 }
 
+// ----------Render and change input value (range)--------//
+
+function getRangeInput() {
+
 const rangeBlocks = document.querySelectorAll ('.range-block');
 rangeBlocks.forEach (block => {
     const arrValue = block.querySelectorAll ('.range_value-list option');
     const inputSelector = block.querySelector ('.range-thumb');
+    const buttonIcrement = block.querySelector ('.range_icrement');
+    const buttonDecrement = block.querySelector ('.range_decrement');
     let inputValue = inputSelector.value;
     renderRangeValue(inputSelector,inputValue, arrValue);
-
+    
     inputSelector.addEventListener('change', getRangeValue);
+    buttonIcrement.addEventListener('click', function (event){
+        inputSelector.stepUp(1);
+        inputValue = inputSelector.value;
+        renderRangeValue(inputSelector,inputValue, arrValue);
+
+    });
+
+    buttonDecrement.addEventListener('click', function (event){
+        inputSelector.stepDown(1);
+        inputValue = inputSelector.value;
+        renderRangeValue(inputSelector,inputValue, arrValue);
+    });
 
     function getRangeValue(e) {
         inputValue = this.value;
@@ -81,7 +99,11 @@ rangeBlocks.forEach (block => {
     inputSelectot.previousElementSibling.textContent=rangeValue;
   }
 
+}
+
 bindModal(".js-contactUs", ".js-popupCall", ".js-popupCall_close", 'faded', 'fadeOut');
 bindModal(".js_price", ".js_popupPrice", ".js-pricePopup_close", 'faded', 'fadeOut');
+getRangeInput()
+
 
 });
