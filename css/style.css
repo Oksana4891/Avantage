@@ -391,6 +391,7 @@ footer {
   background: url(../img/icons/tr4.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 /* Section Team */
@@ -1021,6 +1022,10 @@ footer {
     left: 40px;
   }
 
+  .site_list {
+    padding: 0px 30px;
+  }
+
   .header_menu-item {
     line-height: 38px;
     font-size: 18px;
@@ -1102,11 +1107,58 @@ footer {
     flex-basis: calc(33% - 20px);
   }
 
+  .stages_info {
+    font-size: 18px;
+    line-height: 30px;
+    padding:40px 40px 40px 130px;
+  }
+
+  .stages_info::before {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .team_title, .about-us_title {
+    padding-bottom: 30px;
+  }
+
+  .team_title--text, .about-us_title-text {
+    padding-bottom: 30px;
+}
+   .team_list {
+     padding-left: 60px;
+   }
   .team_photo {
-    width: 230px;
-    height: 230px;
+    width: 240px;
+    height: 240px;
     object-fit: cover;
   }
+
+  .about-us_list {
+    padding: 0;
+  }
+
+  .about-us_item {
+    position: relative;
+    flex-basis: 50%;
+    margin-bottom: 45px;
+  }
+
+  .about-us_item:nth-child(odd) {
+    padding-right: 40px;
+  }
+
+  .about-us_item::after {
+    height: 40px;
+    width: 40px;
+}
+
+.about-us_item::before {
+  left: 15px;
+  width: 10px;
+  height: 18px;
+  border-width: 0 3px 3px 0;
+}
  
   .calcPrice_info--radio {
     flex-wrap: wrap;
@@ -1123,9 +1175,25 @@ footer {
     padding-right: 60px;
 }
 
+.calcPrice_total {
+  font-size: 20px;
+}
+
+.calcPrice_consultation_form {
+  margin-top: 25px;
+}
+
 .questions_item_title {
   font-size: 24px;
 }
+.questions_item_title::before {
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+
+
 .contacts_block {
   width: 925px;
   height: 80px;
