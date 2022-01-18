@@ -1353,7 +1353,7 @@ footer {
     padding: 40px 20px;
   }
 
-  .promo .container {
+  .header-container {
     padding: 0px;
   }
 
@@ -1659,6 +1659,10 @@ footer {
   .header__contacts {
     display: none;
   }
+
+  .header_menu .mobile-contact {
+    display: block;
+}
 
   .burger {
     display: block;
