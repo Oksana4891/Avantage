@@ -71,6 +71,7 @@ rangeBlocks.forEach (block => {
     const buttonDecrement = block.querySelector ('.range_decrement');
     let inputValue = inputSelector.value;
     renderRangeValue(inputSelector,inputValue, arrValue);
+
     
     inputSelector.addEventListener('change', getRangeValue);
     buttonIcrement.addEventListener('click', function (event){
@@ -95,11 +96,19 @@ rangeBlocks.forEach (block => {
 
   function renderRangeValue (inputSelectot, inputValue, arrValue) {
     const rangeValue = arrValue[inputValue].value;
-    inputSelectot.previousElementSibling.style.paddingLeft=(arrValue[inputValue].offsetLeft- 10)+"px";
+    inputSelectot.previousElementSibling.style.paddingLeft=(arrValue[inputValue].offsetLeft-30)+"px";
     inputSelectot.previousElementSibling.textContent=rangeValue;
   }
 
 }
+
+
+const burger = document.querySelector('#burger');
+const burgerMenu = document.querySelector('.js-menu');
+
+burger.onclick = function () {
+  burgerMenu.classList.toggle('is-open');
+};
 
 bindModal(".js-contactUs", ".js-popupCall", ".js-popupCall_close", 'faded', 'fadeOut');
 bindModal(".js_price", ".js_popupPrice", ".js-pricePopup_close", 'faded', 'fadeOut');
