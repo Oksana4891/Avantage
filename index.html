@@ -15,7 +15,7 @@
 <body>
   <section id="up" class="promo">
     <div class="container header-container">
-    <header class="header">       
+      <header class="header">
         <h1>
           <a href="index.html" class="header__logo big-logo">
             <img src="img/logo.png" alt="logo" />
@@ -34,15 +34,13 @@
           </button>
         </div>
         <div class="header__contacts">
-          <a href="tel:++74722753259" class="header__phone phone"
-            >+7 (4722) 75-32-59</a
-          >
-        </div> 
+          <a href="tel:++74722753259" class="header__phone phone">+7 (4722) 75-32-59</a>
+        </div>
         <div class="burger" id="burger">
           <div class="burger-line"></div>
         </div>
-    </header> 
-  </div>
+      </header>
+    </div>
     <div class="promo_section container">
       <h2 class="section_title">
         Все виды бухгалтерских услуг для юридических и физических лиц в
@@ -61,12 +59,13 @@
         <button class=" button site_button--color js_price">
           Узнать стоимость
         </button>
-        <a href="tel:++74722753259" class=" button site_button--whatsapp">WhatsApp</a>
+        <a  class="button site_button--whatsapp" href="whatsapp://send/?phone=+74722753259" target="
+        _blank">WhatsApp</a>
         <button class=" button site_button--transparent js-contactUs">
           Обратный звонок
         </button>
       </div>
-    </div>
+
     </div>
   </section>
   <section class="services  container">
@@ -158,7 +157,8 @@
       </div>
       <div class="consultation_whatsapp">
         <p>Не хотите, чтобы звонили? Пишите в WhatsAp</p>
-        <a href="tel:++74722753259" class="section_btn button site_button--whatsapp">WhatsApp</a>
+        <a  class="button site_button--whatsapp section_btn" href="whatsapp://send/?phone=+74722753259" target="
+        _blank">WhatsApp</a>
       </div>
     </div>
   </section>
@@ -200,16 +200,16 @@
     </p>
     <ul class="team_list site_list">
       <li class="team_item">
-        <img class="team_photo" src="/img/team1.png" alt="team" />
+        <img class="team_photo" src="img/team1.png" alt="team" />
         <p class="text--bold">Ирина Номеровская</p>
       </li>
       <li class="team_item">
-        <img class="team_photo" src="/img/team1.png" alt="team" />
+        <img class="team_photo" src="img/team1.png" alt="team" />
 
         <p class="text--bold">Ирина Номеровская</p>
       </li>
       <li class="team_item">
-        <img class="team_photo" src="/img/team1.png" alt="team" />
+        <img class="team_photo" src="img/team1.png" alt="team" />
         <p class="text--bold">Ирина Номеровская</p>
       </li>
     </ul>
@@ -247,7 +247,8 @@
         <button class="button site_button--color js_price">
           Узнать стоимость
         </button>
-        <a href="tel:++74722753259" class="button site_button--whatsapp">WhatsApp</a>
+        <a  class="button site_button--whatsapp" href="whatsapp://send/?phone=+74722753259" target="
+        _blank">WhatsApp</a>
         <button class="button site_button--transparent js-contactUs">
           Обратный звонок
         </button>
@@ -620,8 +621,11 @@
           </div>
         </div>
       </div>
-      <div class="calcPrice_total"> Итого примерно <span id="calcPrice_total">____</span><span> ₽</span> в месяц</div>
-
+      </div>
+      <div class="calcPrice_total"> Итого примерно 
+        <span id="calcPrice_total">____</span>
+        <span> ₽</span> в месяц
+      </div>
       <div class="calcPrice_consultation_form">
         <p>Запишитесь на бесплатную консультацию и узнайте точную цену</p>
         <form class="form_back-call js-form-requestCall" method="POST">
@@ -714,7 +718,7 @@
   <!-- Modals -->
   <!-- Request a call -->
   <div class="popup popup-call js-popupCall">
-    <div class="popup_form">
+    <div class="popup_form container">
       <form class="form_back-call js-form-requestCall popup_form--call" method="POST">
         <input class="form_back-call--input" name="user_neme" required="" type="text" placeholder="Как вас зовут?" />
         <input class="form_back-call--input" name="user_tel" required="" type="tel" placeholder="Номер телефона" />
@@ -727,405 +731,798 @@
   </div>
   <!-- Price -->
   <div class="popup popup_price js_popupPrice">
-    <div class="price-popup popup-form container">
-      <div class="price-popup_info">
-        Базовая стоимость услуг, до 5 штатных сотрудников, до 8 консультаций в
-        месяц, в рублях
+    <div class="container">
+      <div class="price-popup popup-form">
+        <div class="price-popup_info ">
+          Базовая стоимость услуг, до 5 штатных сотрудников, до 8 консультаций в
+          месяц, в рублях
+        </div>
+        <div class="desctop">
+          <table class="price_table price_table--threeСol">
+            <caption class="price_table_title">
+              Патент
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">ИП без сотруднико</th>
+                <th scope="col">ИП с сотрудниками</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>-</td>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>1 500</td>
+                <td>3 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>3 000</td>
+                <td>4 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>4 000</td>
+                <td>5 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>5 000</td>
+                <td>6 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>6 000</td>
+                <td>7 000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="price_table price_table--fourСol">
+            <caption class="price_table_title">
+              УСН 6%
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">OOO</th>
+                <th scope="col">ИП без сотруднико</th>
+                <th scope="col">ИП с сотрудниками</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>900</td>
+                <td>900</td>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>5 000</td>
+                <td>3 000</td>
+                <td>4 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>7 000</td>
+                <td>5 000</td>
+                <td>6 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>8 000</td>
+                <td>7 000</td>
+                <td>6 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>9 000</td>
+                <td>7 000</td>
+                <td>8 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>10 000</td>
+                <td>8 000</td>
+                <td>9 000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="price_table price_table--fourСol">
+            <caption class="price_table_title">
+              УСН 15%
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">OOO</th>
+                <th scope="col">ИП без сотруднико</th>
+                <th scope="col">ИП с сотрудниками</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>900</td>
+                <td>900</td>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>6 000</td>
+                <td>4 000</td>
+                <td>5 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>9 000</td>
+                <td>7 000</td>
+                <td>8 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>10 000</td>
+                <td>8 000</td>
+                <td>9 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>11 000</td>
+                <td>9 000</td>
+                <td>10 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>12 000</td>
+                <td>10 000</td>
+                <td>11 000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="price_table price_table--fourСol">
+            <caption class="price_table_title">
+              ОСНО
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">OOO</th>
+                <th scope="col">ИП без сотруднико</th>
+                <th scope="col">ИП с сотрудниками</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>900</td>
+                <td>900</td>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>7 000</td>
+                <td>5 000</td>
+                <td>6 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>10 000</td>
+                <td>8 000</td>
+                <td>9 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>12 000</td>
+                <td>9 000</td>
+                <td>10 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>14 000</td>
+                <td>10 000</td>
+                <td>11 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>16 000</td>
+                <td>11 000</td>
+                <td>12 000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mobile">
+          <table class="price_table price_table--twoСol">
+            <caption class="price_table_title">
+              Патент
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">ИП без сотруднико</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>-</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>1 500</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>3 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>4 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>5 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>6 000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="price_table price_table--twoСol">
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">ИП с сотрудниками</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>3 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>4 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>5 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>6 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>7 000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="price_table price_table--twoСol">
+            <caption class="price_table_title">
+              УСН 6%
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">OOO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>5 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>7 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>8 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>9 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>10 000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="price_table price_table--twoСol">
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">ИП без сотруднико</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>3 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>5 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>7 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>7 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>8 000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="price_table price_table--twoСol">
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">ИП с сотрудниками</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>4 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>6 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>6 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>8 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>9 000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="price_table price_table--twoСol">
+            <caption class="price_table_title">
+              УСН 15%
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">OOO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>6 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>9 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>10 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>11 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>12 000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="price_table price_table--twoСol">
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">ИП без сотруднико</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>4 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>7 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>8 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>9 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>10 000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="price_table price_table--twoСol">
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">ИП с сотрудниками</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>5 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>8 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>9 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>10 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>11 000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="price_table price_table--twoСol">
+            <caption class="price_table_title">
+              ОСНО
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">OOO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>7 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>10 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>12 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>14 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>16 000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="price_table price_table--twoСol">
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">ИП без сотруднико</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>5 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>8 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>9 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>10 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>11 000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="price_table price_table--twoСol">
+            <thead>
+              <tr>
+                <th scope="col">Первичных документов в месяц</th>
+                <th scope="col">ИП с сотрудниками</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 (нулевая отчётность)</th>
+                <td>900</td>
+              </tr>
+              <tr>
+                <th scope="row">до 10</th>
+                <td>6 000</td>
+              </tr>
+              <tr>
+                <th scope="row">до 30</th>
+                <td>9 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 30 до 60</th>
+                <td>10 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 60 до 90</th>
+                <td>11 000</td>
+              </tr>
+              <tr>
+                <th scope="row">от 90 до 120</th>
+                <td>12 000</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="price-popup_note">
+          <p>**один документ.</p>
+          <p>* акт, счет-фактура, накладная</p>
+          <p>
+            * приходный и расходный кассовый ордер, Z -документ кассовых
+            аппаратов
+          </p>
+          <p>* банковский платеный документ</p>
+          <p>* авансовый отчет</p>
+        </div>
+        <div class="price-popup_info">
+          Повышающие коэффициенты за сложность работы и вид деятельности.
+        </div>
+        <div class="price-popup_info">
+          При наличии нескольких коэффициентов они суммируются.
+        </div>
+        <table class="price_table price_table--twoСol">
+          <thead>
+            <tr>
+              <th scope="col">Услуга</th>
+              <th scope="col">Увеличение стоимости пакета</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Валютные операции (валютный контроль)</th>
+              <td>10%</td>
+            </tr>
+            <tr>
+              <th scope="row">Внешнеэкономическая деятельность</th>
+              <td>25%</td>
+            </tr>
+            <tr>
+              <th scope="row">Лизинговые операции</th>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие обособленного подразделения</th>
+              <td>15% каждое подразделение</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Наличие агентских договоров либо договоров комиссии
+              </th>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Раздельный учет НДС (для компаний выдающих займы)
+              </th>
+              <td>10%</td>
+            </tr>
+            <tr>
+              <th scope="row">Применение различных ставок по НДС</th>
+              <td>10%</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие разных видов деятельности</th>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие операций с ценными бумагами</th>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">Производство</th>
+              <td>25%</td>
+            </tr>
+            <tr>
+              <th scope="row">Строительство</th>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <th scope="row">Общепит</th>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <th scope="row">Розничная торговля с применением ККМ</th>
+              <td>25%</td>
+            </tr>
+            <tr>
+              <th scope="row">Оптовая торговля</th>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <th scope="row">Торговля акцизными товарами</th>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <th scope="row">Агентская деятельность</th>
+              <td>15%</td>
+            </tr>
+            <tr>
+              <th scope="row">Применение ПБУ 18/02</th>
+              <td>15%</td>
+            </tr>
+            <tr>
+              <th scope="row">Совмещение налоговых режимов</th>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <th scope="row">Номенклатура материалов:</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">до 30 наименований</th>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">до 60 наименований</th>
+              <td>10%</td>
+            </tr>
+            <tr>
+              <th scope="row">до 100 наименований</th>
+              <td>15%</td>
+            </tr>
+            <tr>
+              <th scope="row">свыше 100 наименований</th>
+              <td>20%</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="price_table price_table--twoСol">
+          <caption class="price_table_title">
+            Дополнительные услуги
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Составление первичных документов</th>
+              <td>50 ₽/ 1 документ</td>
+            </tr>
+            <tr>
+              <th scope="row">Восстановление бухгалтерского учета</th>
+              <td>договорная</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Подготовка пакета документов для участия в конкурсах (тендерах),
+                для получения кредита, для получения банковских гарантий
+              </th>
+              <td>2 500 ₽</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Расчет заработной платы, начисление налогов и сборов (более 5
+                человек)
+              </th>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Кадровое делопроизводство</th>
+              <td>300 ₽/сотрудник</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Экспрес оценка состояния бухгалтерского и налогового учета
+              </th>
+              <td>300 ₽/сотрудник</td>
+            </tr>
+            <tr>
+              <th scope="row">Выезд бухгалтера в ФСС, ПФР и ИФНС</th>
+              <td>от 5 000 ₽</td>
+            </tr>
+            <tr>
+              <th scope="row">Выезд бухгалтера в офис клиента</th>
+              <td>1500 ₽</td>
+            </tr>
+            <tr>
+              <th scope="row">Курьерские услуги</th>
+              <td>500 ₽/час</td>
+            </tr>
+            <tr>
+              <th scope="row">Проработка эффективной схемы налогообложения</th>
+              <td>500 ₽/час</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Сопровождение при проведении выездных проверок
+              </th>
+              <td>от 3 000 ₽</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Формирование отчетности по организациям, временно не
+                осуществляющим свою деятельность
+              </th>
+              <td>900 ₽</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="price-popup_close js-pricePopup_close">x</div>
       </div>
-      <table class="price_table price_table--threeСol">
-        <caption class="price_table_title">
-          Патент
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Первичных документов в месяц</th>
-            <th scope="col">ИП без сотруднико</th>
-            <th scope="col">ИП с сотрудниками</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">0 (нулевая отчётность)</th>
-            <td>-</td>
-            <td>900</td>
-          </tr>
-          <tr>
-            <th scope="row">до 10</th>
-            <td>1 500</td>
-            <td>3 000</td>
-          </tr>
-          <tr>
-            <th scope="row">до 30</th>
-            <td>3 000</td>
-            <td>4 000</td>
-          </tr>
-          <tr>
-            <th scope="row">от 30 до 60</th>
-            <td>4 000</td>
-            <td>5 000</td>
-          </tr>
-          <tr>
-            <th scope="row">от 60 до 90</th>
-            <td>5 000</td>
-            <td>6 000</td>
-          </tr>
-          <tr>
-            <th scope="row">от 90 до 120</th>
-            <td>6 000</td>
-            <td>7 000</td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="price_table price_table--fourСol">
-        <caption class="price_table_title">
-          УСН 6%
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Первичных документов в месяц</th>
-            <th scope="col">OOO</th>
-            <th scope="col">ИП без сотруднико</th>
-            <th scope="col">ИП с сотрудниками</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">0 (нулевая отчётность)</th>
-            <td>900</td>
-            <td>900</td>
-            <td>900</td>
-          </tr>
-          <tr>
-            <th scope="row">до 10</th>
-            <td>5 000</td>
-            <td>3 000</td>
-            <td>4 000</td>
-          </tr>
-          <tr>
-            <th scope="row">до 30</th>
-            <td>7 000</td>
-            <td>5 000</td>
-            <td>6 000</td>
-          </tr>
-          <tr>
-            <th scope="row">от 30 до 60</th>
-            <td>8 000</td>
-            <td>7 000</td>
-            <td>6 000</td>
-          </tr>
-          <tr>
-            <th scope="row">от 60 до 90</th>
-            <td>9 000</td>
-            <td>7 000</td>
-            <td>8 000</td>
-          </tr>
-          <tr>
-            <th scope="row">от 90 до 120</th>
-            <td>10 000</td>
-            <td>8 000</td>
-            <td>9 000</td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="price_table price_table--fourСol">
-        <caption class="price_table_title">
-          УСН 15%
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Первичных документов в месяц</th>
-            <th scope="col">OOO</th>
-            <th scope="col">ИП без сотруднико</th>
-            <th scope="col">ИП с сотрудниками</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">0 (нулевая отчётность)</th>
-            <td>900</td>
-            <td>900</td>
-            <td>900</td>
-          </tr>
-          <tr>
-            <th scope="row">до 10</th>
-            <td>6 000</td>
-            <td>4 000</td>
-            <td>5 000</td>
-          </tr>
-          <tr>
-            <th scope="row">до 30</th>
-            <td>9 000</td>
-            <td>7 000</td>
-            <td>8 000</td>
-          </tr>
-          <tr>
-            <th scope="row">от 30 до 60</th>
-            <td>10 000</td>
-            <td>8 000</td>
-            <td>9 000</td>
-          </tr>
-          <tr>
-            <th scope="row">от 60 до 90</th>
-            <td>11 000</td>
-            <td>9 000</td>
-            <td>10 000</td>
-          </tr>
-          <tr>
-            <th scope="row">от 90 до 120</th>
-            <td>12 000</td>
-            <td>10 000</td>
-            <td>11 000</td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="price_table price_table--fourСol">
-        <caption class="price_table_title">
-          ОСНО
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Первичных документов в месяц</th>
-            <th scope="col">OOO</th>
-            <th scope="col">ИП без сотруднико</th>
-            <th scope="col">ИП с сотрудниками</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">0 (нулевая отчётность)</th>
-            <td>900</td>
-            <td>900</td>
-            <td>900</td>
-          </tr>
-          <tr>
-            <th scope="row">до 10</th>
-            <td>7 000</td>
-            <td>5 000</td>
-            <td>6 000</td>
-          </tr>
-          <tr>
-            <th scope="row">до 30</th>
-            <td>10 000</td>
-            <td>8 000</td>
-            <td>9 000</td>
-          </tr>
-          <tr>
-            <th scope="row">от 30 до 60</th>
-            <td>12 000</td>
-            <td>9 000</td>
-            <td>10 000</td>
-          </tr>
-          <tr>
-            <th scope="row">от 60 до 90</th>
-            <td>14 000</td>
-            <td>10 000</td>
-            <td>11 000</td>
-          </tr>
-          <tr>
-            <th scope="row">от 90 до 120</th>
-            <td>16 000</td>
-            <td>11 000</td>
-            <td>12 000</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="price-popup_note">
-        <p>**один документ.</p>
-        <p>* акт, счет-фактура, накладная</p>
-        <p>
-          * приходный и расходный кассовый ордер, Z -документ кассовых
-          аппаратов
-        </p>
-        <p>* банковский платеный документ</p>
-        <p>* авансовый отчет</p>
-      </div>
-      <div class="price-popup_info">
-        Повышающие коэффициенты за сложность работы и вид деятельности.
-      </div>
-      <div class="price-popup_info">
-        При наличии нескольких коэффициентов они суммируются.
-      </div>
-      <table class="price_table price_table--twoСol">
-        <thead>
-          <tr>
-            <th scope="col">Услуга</th>
-            <th scope="col">Увеличение стоимости пакета</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Валютные операции (валютный контроль)</th>
-            <td>10%</td>
-          </tr>
-          <tr>
-            <th scope="row">Внешнеэкономическая деятельность</th>
-            <td>25%</td>
-          </tr>
-          <tr>
-            <th scope="row">Лизинговые операции</th>
-            <td>5%</td>
-          </tr>
-          <tr>
-            <th scope="row">Наличие обособленного подразделения</th>
-            <td>15% каждое подразделение</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              Наличие агентских договоров либо договоров комиссии
-            </th>
-            <td>5%</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              Раздельный учет НДС (для компаний выдающих займы)
-            </th>
-            <td>10%</td>
-          </tr>
-          <tr>
-            <th scope="row">Применение различных ставок по НДС</th>
-            <td>10%</td>
-          </tr>
-          <tr>
-            <th scope="row">Наличие разных видов деятельности</th>
-            <td>5%</td>
-          </tr>
-          <tr>
-            <th scope="row">Наличие операций с ценными бумагами</th>
-            <td>5%</td>
-          </tr>
-          <tr>
-            <th scope="row">Производство</th>
-            <td>25%</td>
-          </tr>
-          <tr>
-            <th scope="row">Строительство</th>
-            <td>20%</td>
-          </tr>
-          <tr>
-            <th scope="row">Общепит</th>
-            <td>20%</td>
-          </tr>
-          <tr>
-            <th scope="row">Розничная торговля с применением ККМ</th>
-            <td>25%</td>
-          </tr>
-          <tr>
-            <th scope="row">Оптовая торговля</th>
-            <td>20%</td>
-          </tr>
-          <tr>
-            <th scope="row">Торговля акцизными товарами</th>
-            <td>20%</td>
-          </tr>
-          <tr>
-            <th scope="row">Агентская деятельность</th>
-            <td>15%</td>
-          </tr>
-          <tr>
-            <th scope="row">Применение ПБУ 18/02</th>
-            <td>15%</td>
-          </tr>
-          <tr>
-            <th scope="row">Совмещение налоговых режимов</th>
-            <td>20%</td>
-          </tr>
-          <tr>
-            <th scope="row">Номенклатура материалов:</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">до 30 наименований</th>
-            <td>5%</td>
-          </tr>
-          <tr>
-            <th scope="row">до 60 наименований</th>
-            <td>10%</td>
-          </tr>
-          <tr>
-            <th scope="row">до 100 наименований</th>
-            <td>15%</td>
-          </tr>
-          <tr>
-            <th scope="row">свыше 100 наименований</th>
-            <td>20%</td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="price_table price_table--twoСol">
-        <caption class="price_table_title">
-          Дополнительные услуги
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col"></th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Составление первичных документов</th>
-            <td>50 ₽/ 1 документ</td>
-          </tr>
-          <tr>
-            <th scope="row">Восстановление бухгалтерского учета</th>
-            <td>договорная</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              Подготовка пакета документов для участия в конкурсах (тендерах),
-              для получения кредита, для получения банковских гарантий
-            </th>
-            <td>2 500 ₽</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              Расчет заработной платы, начисление налогов и сборов (более 5
-              человек)
-            </th>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">Кадровое делопроизводство</th>
-            <td>300 ₽/сотрудник</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              Экспрес оценка состояния бухгалтерского и налогового учета
-            </th>
-            <td>300 ₽/сотрудник</td>
-          </tr>
-          <tr>
-            <th scope="row">Выезд бухгалтера в ФСС, ПФР и ИФНС</th>
-            <td>от 5 000 ₽</td>
-          </tr>
-          <tr>
-            <th scope="row">Выезд бухгалтера в офис клиента</th>
-            <td>1500 ₽</td>
-          </tr>
-          <tr>
-            <th scope="row">Курьерские услуги</th>
-            <td>500 ₽/час</td>
-          </tr>
-          <tr>
-            <th scope="row">Проработка эффективной схемы налогообложения</th>
-            <td>500 ₽/час</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              Сопровождение при проведении выездных проверок
-            </th>
-            <td>от 3 000 ₽</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              Формирование отчетности по организациям, временно не
-              осуществляющим свою деятельность
-            </th>
-            <td>900 ₽</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="price-popup_close js-pricePopup_close">x</div>
     </div>
   </div>
   <script src="js/scripts.js"></script>
