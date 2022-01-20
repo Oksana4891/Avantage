@@ -1409,6 +1409,8 @@ footer {
     line-height: 26px;
   }
 
+ 
+
   .site_item--firstColor::before,
   .site_item--secondColor::before,
   .about-us_item::before {
@@ -1416,6 +1418,7 @@ footer {
     content: "";
     width: 8px;
     height: 16px;
+    left: 4px;
   }
 
   .site_item--secondColor::after,
